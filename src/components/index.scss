@@ -3,6 +3,10 @@ body {
   margin: 0;
   padding: 0;
 
+  a {
+    text-decoration: none;
+  }
+
 }
 
 .d-flex {
@@ -30,10 +34,11 @@ header {
   padding-bottom: 40px;
   border-bottom: 2px solid #eaeaea;
 
-
   .headerLeft {
     display: flex;
     align-items: center;
+    color: black;
+
 
     img {
       margin-right: 15px;
@@ -62,7 +67,12 @@ ul {
   }
 
   .secondLi {
-    margin-left: 30px;
+    margin-left: 2px;
+
+    img {
+      margin-left: 20px;
+    }
+
   }
 }
 
@@ -103,6 +113,7 @@ ul {
   flex-wrap: wrap;
   border: 1px solid #eaeaea;
   border-radius: 60px;
+  margin-bottom: 30px;
   padding: 30px;
   box-sizing: border-box;
 
@@ -156,9 +167,13 @@ ul {
 
   }
 
+
+
   .buttonPlus {
     background: #FFFFFF;
-    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0px solid #F2F2F2;
     border-radius: 8px;
     width: 32px;
     height: 32px;
@@ -168,6 +183,7 @@ ul {
 
 .catalog {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
 }
@@ -180,7 +196,6 @@ ul {
   height: 110%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  display: none;
 
 
   .drawer {
@@ -298,7 +313,32 @@ ul {
     &:active {
       background-color: darken($color: #9DD458, $amount: 5%);
     }
+  }
+}
 
+.favoriteCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  gap: 25px;
 
+  .favText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 41px;
+    gap: 11px;
+  }
+
+  .favButton {
+    width: 245px;
+    height: 45px;
+    background: #9DD458;
+    border-radius: 18px;
+    border: 0;
+    color: white;
   }
 }
